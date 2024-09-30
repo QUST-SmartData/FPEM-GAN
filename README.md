@@ -1,5 +1,11 @@
 # FPEM-GAN
 
+This is the official repository for "Efficient Image Inpainting of Microresistivity Logs: A DDPM-Based Pseudo-Labeling Approach with FPEM-GAN". Please cite this work if you find this repository useful for your project.
+
+
+In the process of geophysical exploration, the logging image is incomplete due to the mismatch between the size of the logging instrument and the size of the borehole. The missing data will seriously affect the geologic analysis. However, due to the situation of lacking complete images as training labels, existing methods are generally based on usually used algorithms or unsupervised learning methods, which bring abundant computation and time-consuming. In addition, the results match not very well as high-angle fractures appeared a lot and also the fine-grained texture in the inpainted regions. It significantly affects the discrimination of the interpretation for geological phenomena. To solve the aboved problem, we propose a deep learning method to inpaint strati-graphic features. First, to conduct the consuming time and according to the issues of less labels for training, we proposed a new method with pseudo-labeled training datasets in the inpainting process. Second, in order to improve the accuracy of inpainting to high-angle fractures, we also proposed a Fusion-Perspective-Enhancement Module (FPEM), which can effectively infer the missing regions based on the contextual guidance. Finally, to better describe the fine-grained texture, we proposed a new discriminator called SM-Unet, which help enhancing much more textured features highlighting to the fine-grained, the new discriminator can adjust the weight of various regions through producing soft labeling during the training procedure. The Peak Signal-to-Noise Ratio of the proposed algorithm in the logging image dataset is 25.35, the highest Structural Similarity Index is 0.901. Compared to the state-of-the-art methods, the proposed method shows good results matching very well especially for high-angle fractures and fine-grained textured features, and costs less computation.
+
+
 ![Image text](https://github.com/ZZY19980203/FPEM-GAN/blob/main/img_folder/framework.jpg)
 
 
